@@ -1,0 +1,21 @@
+Instructions:
+
+Finish as much of this test as possible.
+You may use the Internet to look up anything you wish.
+You will be evaluated on your HTML, CSS, and JavaScript code quality.
+Place your HTML in html/index.html. Other resources should be saved where appropriate.
+
+Based on mockup.jpg, create a two column design utilizing the images and text provided (found in the images and text directories). The text and sprites in the article options bar under the published date/time need to be links. Although not shown in mockup.jpg, place a gradient background on the entire page that goes from #CCCCCC at the top to #FFFFFF at the bottom.
+
+The only interactive element that needs to function is the text size switcher. The story text needs to be 14px when the user first goes the page. Create toggle functionality utilizing jQuery so when the user clicks on "larger type", only the text in the article changes to 16px, the text "larger type" needs to change to "smaller type", and the icon needs to change to the minus. When the user clicks on "smaller type", everything needs to change back to it's original state. You have been given the jquery-1.4.min.js file in the js directory.
+
+Attribute requirements:
+
+orange: #CC6600
+black:#202020
+grey: #666666
+fonts: Georgia,"Times New Roman",Times,serif and Arial,"MS Trebuchet",sans-serif 
+headline font size: 18px
+article text size: 14px
+photo cutline size: 12px
+page gradient: vertical from #CCCCCC at the top to #FFFFFF at the bottom

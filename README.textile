@@ -1,0 +1,17 @@
+h1. CMGdigital UI Developer test
+
+h3. What is this?
+
+This is a UI Developer hiring competency test designed to gauge skill, code completeness and accuracy, and affinity for standards based development.
+
+h3. What are the rules?
+
+Please read the INSTRUCTIONS.txt file and follow the specifications and requirements therein.
+
+h3. How should I deliver my completed test?
+
+The preferred method is delivery via github. Fork this repository, complete the test, then send a pull request. Alternatively, you can zip your completed test and return to your hiring manager or other contact at CMGdigital for review.
+
+h3. Anything else?
+
+You should commit your progress often and write clear and informative commit messages.

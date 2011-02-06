@@ -5,8 +5,8 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" href="../css/reset.css" />
 	<link rel="stylesheet" href="../css/style.css" />
-	<script src="assets/js/jquery.js" type="text/javascript" charset="utf-8"></script>
-	<title>UI Test</title>
+	<script src="../js/jquery-1.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<title>UI Test : Laurie Holcombe</title>
 </head>
 <body>
 
@@ -38,7 +38,7 @@
 		
 		<!-- user options -->
 		<div id="options">
-		<a href="#comment" class="comment">Post a Comment</a> | <a href="#email" class="email">E-mail</a> | <a href="#print" class="print">Print</a> | <a href="#share" class="share">Share</a> | <a href="#larger-type" class="resize">Larger Type</a>
+		<a href="#comment" class="comment">Post a Comment</a> | <a href="#email" class="email">E-mail</a> | <a href="#print" class="print">Print</a> | <a href="#share" class="share">Share</a> | <div class="resize"><a class="larger">Larger Type</a></div>
 		</div>
 		<!-- end user options -->
 		<!--article text -->
@@ -82,6 +82,21 @@
 	</div>
 	<!-- end photo sidebar -->
 </div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$( ".resize a.larger" ).click(function(){
+			$('#article-text').toggleClass("large");
+			$(this).toggleClass("smaller");
+			if($(this).hasClass("smaller")){
+				$(this).html("Smaller Type");
+			} else {
+				$(this).html("Larger Type");
+			}
+			return false;
+		});
+	});
+</script>
 <!-- end page content -->
 </body>
 </html>

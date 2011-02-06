@@ -1,10 +1,14 @@
 html {
 	height: 100%;
 	text-align: center;
+}
+
+body {
 	background: #fff; /* non CSS3 browsers */
 	background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#fff)); /* Webkit */
 	background: -moz-linear-gradient(top,  #ccc,  #fff); /* Firefox 3.6+ */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#ffffff'); /* IE */
+	background-repeat: no-repeat;
 }
 
 #content {
@@ -22,6 +26,8 @@ html {
 #content a:hover {
 	text-decoration: underline;
 }
+
+/* @group Small Top Nav */
 
 #breadcrumbs {
 	color: #202020;
@@ -44,11 +50,15 @@ html {
 	text-decoration: underline;
 }
 
+/* @end */
+
 #content h1 {
 	font: 18px Georgia,"Times New Roman",Times,serif;
 	color: #202020;
 	margin-bottom: 26px;
 }
+
+/* @group Article Options */
 
 #options {
 	color: #202020;
@@ -91,11 +101,28 @@ html {
 }
 
 .resize {
+	display: inline;
+}
+
+.larger {
 	height: 11px;
 	background: url(../images/sprites.gif) no-repeat 0 -390px;
 	padding: 0 5px 0 20px;
 	margin-left: 2px;
+	cursor: pointer;
 }
+
+.smaller {
+	height: 11px;
+	background: url(../images/sprites.gif) no-repeat 0 -435px;
+	padding: 0 5px 0 20px;
+	margin-left: 2px;
+	cursor: pointer;
+}
+
+/* @end */
+
+/* @group Author & Publishing Info */
 
 #byline h2 {
 	font: 14px Arial,"MS Trebuchet",sans-serif;
@@ -118,9 +145,21 @@ html {
 	margin: 10px 0;
 }
 
-#article-text p {
+/* @end */
+
+/* @group Main Article Content */
+
+#article-text {
 	font: 14px Arial,"MS Trebuchet",sans-serif;
 	color: #202020;
+}
+
+#article-text.large {
+	font: 16px Arial,"MS Trebuchet",sans-serif;
+	color: #202020;
+}
+
+#article-text p {
 	margin: 0 0 15px 0;
 }
 
@@ -139,6 +178,10 @@ html {
 #header h2 {
 	font-size: 16px;
 }
+
+/* @end */
+
+/* @group Photo Sidebar */
 
 #photo-sidebar {
 	width: 170px;
@@ -173,3 +216,5 @@ html {
 	font: 12px Arial,"MS Trebuchet",sans-serif;
 	margin: 10px 0 0 0;
 }
+
+/* @end */
